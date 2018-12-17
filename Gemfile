@@ -36,12 +36,20 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+
+# app specific gems
+gem 'haml'
+gem "haml-rails", "~> 1.0"
+gem 'nfg_ui', git: 'https://github.com/network-for-good/nfg_ui', branch: 'master'
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'factory_bot_rails'
   gem 'rspec-rails', '~> 3.5'
   gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
+  gem 'spring-commands-rspec'
 end
 
 group :development do
