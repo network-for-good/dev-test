@@ -24,6 +24,7 @@ RSpec.describe Question, type: :model do
         before do
           question.options_string = "blue"
         end
+
         it 'should add only the new options' do
           expect { subject }.to change { question.reload.options.count }.from(1).to(3)
         end
