@@ -8,7 +8,8 @@ RSpec.describe "elements/index.html.haml", type: :view do
   end
 
   it 'should render the badge with text from body' do
-    expect(subject).to have_css('#badges span.badge.badge-pill.badge-primary', text: "Network For Good")
+    # changed badge-primary to badge-danger as it is getting applied in HTML
+    expect(subject).to have_css('#badges span.badge.badge-pill.badge-danger', text: "Network For Good")
   end
 
   it 'should render the badge with text from block' do

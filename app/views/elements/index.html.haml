@@ -9,7 +9,8 @@
 
       = ui.nfg :badge, :pill, body: "Network For Good", theme: :danger
 
-      = ui.nfg :badge, :pill, body: 12, theme: :primary, class: 'example-class'
+      -# should return string
+      = ui.nfg :badge, :pill, body: "12", theme: :primary, class: 'example-class'
 
       = ui.nfg :badge, :pill, theme: :success do
         = "Fundraising"
