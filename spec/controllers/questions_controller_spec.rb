@@ -1,11 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe QuestionController, type: :controller do
+RSpec.describe QuestionsController, type: :controller do
   describe 'POST #create' do
-    before do
-      Question.delete_all
-    end
-
     let(:question_params) do
       { label: 'What is 1 + 1?',
         options: ['2', '3', '42'] }
@@ -24,6 +20,15 @@ RSpec.describe QuestionController, type: :controller do
 
       expect(new_question).to be_present
       expect(response).to redirect_to(question_path(new_question))
+    end
+  end
+
+  context 'with invalid input' do
+    it 'renders /new' do
+      post :create, params: { label: '' }
+      expect(response).to be_successful
+      # NOTE: this assertion was removed from Rails v5.1, but is provided in this test app via the rails-controller-testing gem
+      expect(response).to render_template('new')
     end
   end
 end

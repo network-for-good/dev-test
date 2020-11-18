@@ -11,7 +11,9 @@ This project is a simple Rails app intended to help you demonstrate:
 * Problem-solving abilities
 * Ability to use the [Git version control system](https://git-scm.com/)
 
-Your goal is to add functionality and fix bugs so that the app's [RSpec test suite](spec/) passes.
+## Scenario
+
+Your goal is to add functionality and fix bugs so that the app's [RSpec test suite](spec/) passes. This will involve modifying both application code (where functionality is missing or broken) and RSpec code (where the functionality is correct, but the test is not written correctly).
 
 ## Preqrequisites
 
@@ -34,6 +36,10 @@ Your goal is to add functionality and fix bugs so that the app's [RSpec test sui
 * Add and change Ruby code to make the test suite pass successfully by running `rspec`.
 
 * The application views use Network for Good's design system, [NFG UI](https://github.com/network-for-good/nfg_ui). You may want to refer to NFG UI's [documentation site](https://nfg-ui-display-app.herokuapp.com/bootstrap/badges).
+
+* You may see warning messages related to the NFG UI gem, such as `warning: already initialized constant NfgUi::Components::Utilities::ResourceThemeable::FALLBACK_ICO`. These warnings may be safely disregarded.
+
+* When complete, you will see a success message such as: `15 examples, 0 failures`.
 
 ## Delivery Instructions
 

@@ -4,7 +4,9 @@ class Question < ApplicationRecord
   validates :label, presence: true, length: { maximum: 150 }
 
   def options_string=(option_string)
-    option_string.to_s.split(',').map(&:strip).each_with_index do |option, index|
+    new_options = option_string.to_s.split(',').map(&:strip)
+    
+    new_options.each_with_index do |option, index|
       # for each new option
       if (found_option = options.select { |o| o.name.downcase == option.downcase }.first).present?
         # if there already existed an option with the same name (case insenstive)
