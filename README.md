@@ -11,9 +11,7 @@ This project is a simple Rails app intended to help you demonstrate:
 * Problem-solving abilities
 * Ability to use the [Git version control system](https://git-scm.com/)
 
-## Scenario
-
-Your goal is to add functionality and fix bugs so that the app's [RSpec test suite](spec/) passes. This will involve modifying both application code (where functionality is missing or broken) and RSpec code (where the functionality is correct, but the test is not written correctly).
+Your goal is to add functionality and fix bugs so that the app's [RSpec test suite](spec/) passes.
 
 ## Preqrequisites
 

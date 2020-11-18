@@ -11,10 +11,10 @@ class Question < ApplicationRecord
       if (found_option = options.select { |o| o.name.downcase == option.downcase }.first).present?
         # if there already existed an option with the same name (case insenstive)
         # update the position and name (case sensitive)
-        found_option.update(position: index + 1, name: option)
+        found_option.update(name: option)
       else
         # if there wasn't an option then build it
-        options.create(name: option, position: index + 1)
+        options.create(name: option, position: index)
       end
     end
   end

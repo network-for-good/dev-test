@@ -33,7 +33,7 @@ RSpec.describe Question, type: :model do
         it 'should change the position of the existing Option' do
           question.options_string = 'red, blue, green'
           question.reload
-          expect(question.options.map(&:name)).to eq(%w{red blue green})
+          expect(question.options.order(:position).pluck(:name)).to eq(%w{red blue green})
         end
       end
 
