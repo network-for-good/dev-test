@@ -1,0 +1,11 @@
+- options = params.fetch(:question, { options: ['']})[:options]
+
+= form_for @question do |f|
+  = ui.nfg :form_group do
+    = f.label :label, "Question Label:"
+    = f.text_field :label, class: 'form-control'
+  = ui.nfg :form_group do
+    = f.label :options, "Options:"
+    #options_component_container{ data: { options: options} }
+  %br
+  = f.submit class: 'btn btn-primary'

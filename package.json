@@ -1,5 +1,25 @@
 {
   "name": "dev-test",
   "private": true,
-  "dependencies": {}
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "roots": [
+      "spec/javascript"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "app/javascript/src"
+    ]
+  },
+  "dependencies": {
+    "@rails/webpacker": "5.2.1",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
