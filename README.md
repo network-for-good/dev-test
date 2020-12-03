@@ -11,7 +11,7 @@ This project is a simple Rails app intended to help you demonstrate:
 * Problem-solving abilities
 * Ability to use the [Git version control system](https://git-scm.com/)
 
-Your goal is to add functionality and fix bugs so that the app's [RSpec test suite](spec/) passes.
+Your goal is to add functionality and fix bugs so that the app's [RSpec test suite](spec/) and [JS test suite] passes.
 
 ## Preqrequisites
 
@@ -21,23 +21,33 @@ Your goal is to add functionality and fix bugs so that the app's [RSpec test sui
 
 * If you have access to a Windows development environment, you should be able to use [RubyInstaller](https://rubyinstaller.org/) to run the app, but that has not yet been tested. If you are able to set this up, please let us know. Pull requests welcome!
 
+* You need `yarn` package to run JS tests. You can find setup instructions here https://classic.yarnpkg.com/en/docs/install
+
 ## Setup Steps
 
 1. Clone this repository into your development environment using Git.
 
 2. Run the `bin/setup` command to install the app's dependencies and prepare the application's [SQLite](https://sqlite.org/index.html) database.
 
-3. Run the command `rspec` to exercise the test suite. You should see a list of test failures.
+3. Run the command `yarn install` to install JS dependencies.
+
+4. Run the command `rspec` to exercise the test suite. You should see a list of test failures.
+
+5. Run the command `yarn test` to exercise the js test suite.
 
 ## Development
 
-* Add and change Ruby code to make the test suite pass successfully. This will include updating models, controllers, views, and possibly adding migrations.
-
-* When complete, you will see a success message such as: `15 examples, 0 failures`.
+* Add and change Ruby code to make the test suite pass successfully by running `rspec`.
 
 * The application views use Network for Good's design system, [NFG UI](https://github.com/network-for-good/nfg_ui). You may want to refer to NFG UI's [documentation site](https://nfg-ui-display-app.herokuapp.com/bootstrap/badges).
 
 * You may see warning messages related to the NFG UI gem, such as `warning: already initialized constant NfgUi::Components::Utilities::ResourceThemeable::FALLBACK_ICO`. These warnings may be safely disregarded.
+
+* When complete, you will see a success message such as: `15 examples, 0 failures`.
+
+* Add and change JS code to make the test suite pass successfully by running `yarn test`.
+
+* When complete, you will see a success message such as:  `Tests:       8 passed, 8 total`
 
 ## Delivery Instructions
 

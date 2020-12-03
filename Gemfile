@@ -10,7 +10,8 @@ gem 'sqlite3'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-
+gem 'webpacker', '~> 5.x'
+gem 'turbolinks'
 # App-specific gems
 gem 'haml'
 gem "haml-rails", "~> 1.0"
