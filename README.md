@@ -13,7 +13,7 @@ This project is a simple Rails app intended to help you demonstrate:
 
 Your goal is to add functionality and fix bugs so that the app's [RSpec test suite](spec/) and [JS test suite](spec/javascript/) pass. Please do not spend more than four hours on this project; we do not necessarily expect candidates to solve every test. We want to see how you approach this set of problems.
 
-## Preqrequisites
+## Prerequisite
 
 * Completing this project requires you to have access to a Ruby development environment in which you are able to install dependencies using [Bundler](https://bundler.io/).
 
@@ -21,11 +21,11 @@ Your goal is to add functionality and fix bugs so that the app's [RSpec test sui
 
 * If you have access to a Windows development environment, you should be able to use [RubyInstaller](https://rubyinstaller.org/) to run the app, but that has not yet been tested. If you are able to set this up, please let us know. Pull requests welcome!
 
-* You need `yarn` package to run JS tests. You can find setup instructions here https://classic.yarnpkg.com/en/docs/install
+* You need `yarn` package to run JS tests. You can find setup instructions [here](https://classic.yarnpkg.com/en/docs/install).
 
 ## Setup Steps
 
-1. Clone this repository into your development environment using Git.
+1. Download a copy of the `dev-test` from this URL: https://github.com/network-for-good/dev-test/archive/master.zip.  We don't recommend cloning the `dev-test` repository, because you will be delivering your solution as a private repository pull request (see Delivery Instructions, below).
 
 2. Run the `bin/setup` command to install the app's dependencies and prepare the application's [SQLite](https://sqlite.org/index.html) database.
 
@@ -51,16 +51,20 @@ Your goal is to add functionality and fix bugs so that the app's [RSpec test sui
 
 ## Delivery Instructions
 
-When your changes are complete, please push your code to a private Git repository. Since Network for Good uses GitHub for source control, we recommend you push your code to GitHub, but this is not required.
+Solutions should be delivered via GitHub, since Network for Good uses GitHub for source control. Part of our assessment includes evaluating your ability to use Git branches and pull requests. Once your solution is complete:
 
-If you are using GitHub, please make the repository private by following these direction: ["Setting Repository Visibility"](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/setting-repository-visibility). Add the following users as collaborators:
+1. Create a private GitHub repository within your personal GitHub account. You should suffix the repository name with your GitHub user name. For example, if `@subelsky` delivers an solution, the private repository would be named `dev-test-subelsky`. Refer to [these instructions]((https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/setting-repository-visibility) to ensure your solution is private.
+
+2. Create a branch within your private repository called `solution`. For example, the solution delivered by `@subelsky` appears here: https://github.com/subelsky/dev-test-subelsky/tree/solution. (Note: this example is a `public` repository, but your solution should be `private`).
+
+3. Create a pull request that specifies the changes you wish to merge from the `solution` branch into the `main` branch. In our example, `@subelsky` delivered a (simulated) solution: https://github.com/subelsky/dev-test-subelsky/pull/1.
+
+4. Add the following GitHub accounts to your private repository as collaborators, so that we can see your pull request:
 
 * [@hoenth](http://github.com/hoenth)
 * [@subelsky](https://github.com/subelsky)
 
-If you prefer not to use GitHub, you can instead clone this repository and push your changes to another Git host such as [GitLab](https://gitlab.com/) or [BitBucket](https://bitbucket.org/). In this case, please email us the directions for how to access your project files.
-
-If you are not able to use a hosting service, we will also accept Git archive ZIP files as email attachments. See [Git's documentation](https://git-scm.com/docs/git-archive#_examples) to learn how to create a ZIP archive of a Git repository.
+These steps mirror the code review process used by Network for Good.
 
 ## Opportunities at Network for Good
 
