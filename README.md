@@ -13,7 +13,7 @@ This project is a simple Rails app intended to help you demonstrate:
 
 Your goal is to add functionality and fix bugs so that the app's [RSpec test suite](spec/) and [JS test suite](spec/javascript/) pass. Please do not spend more than four hours on this project; we do not necessarily expect candidates to solve every test. We want to see how you approach this set of problems.
 
-## Prerequisite
+## Prerequisites
 
 * Completing this project requires you to have access to a Ruby development environment in which you are able to install dependencies using [Bundler](https://bundler.io/).
 
@@ -53,7 +53,7 @@ Your goal is to add functionality and fix bugs so that the app's [RSpec test sui
 
 Solutions should be delivered via GitHub, since Network for Good uses GitHub for source control. Part of our assessment includes evaluating your ability to use Git branches and pull requests. Once your solution is complete:
 
-1. Create a private GitHub repository within your personal GitHub account. You should suffix the repository name with your GitHub user name. For example, if `@subelsky` delivers an solution, the private repository would be named `dev-test-subelsky`. Refer to [these instructions]((https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/setting-repository-visibility) to ensure your solution is private.
+1. Create a private GitHub repository within your personal GitHub account. You should suffix the repository name with your GitHub user name. For example, if `@subelsky` delivers an solution, the private repository would be named `dev-test-subelsky`. Refer to [these instructions](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/setting-repository-visibility) to ensure your solution is private.
 
 2. Create a branch within your private repository called `solution`. For example, the solution delivered by `@subelsky` appears here: https://github.com/subelsky/dev-test-subelsky/tree/solution. (Note: this example is a `public` repository, but your solution should be `private`).
 
