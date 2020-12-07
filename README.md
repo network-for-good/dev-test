@@ -13,7 +13,7 @@ This project is a simple Rails app intended to help you demonstrate:
 
 Your goal is to add functionality and fix bugs so that the app's [RSpec test suite](spec/) and [JS test suite](spec/javascript/) pass. Please do not spend more than four hours on this project; we do not necessarily expect candidates to solve every test. We want to see how you approach this set of problems.
 
-## Preqrequisites
+## Prerequisite
 
 * Completing this project requires you to have access to a Ruby development environment in which you are able to install dependencies using [Bundler](https://bundler.io/).
 
