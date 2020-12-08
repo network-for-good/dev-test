@@ -1,5 +1,8 @@
 require 'rails_helper'
 
+# NOTE: Please change the application code to make the below specs pass;
+# do not change the specs themselves
+
 RSpec.describe Question, type: :model do
   it { is_expected.to have_many(:options) }
   it { is_expected.to validate_presence_of(:label) }
