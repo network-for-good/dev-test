@@ -23,13 +23,6 @@ RSpec.describe Question, type: :model do
       end
 
       context 'and it matches one of the new Options' do
-        it 'should add only the new Option' do
-          expect { 
-            question.options_string = 'red, blue, green'
-            question.reload
-          }.to change(question.options, :count).from(1).to(3)
-        end
-
         it 'should change the position of the existing Option' do
           question.options_string = 'red, blue, green'
           question.reload
