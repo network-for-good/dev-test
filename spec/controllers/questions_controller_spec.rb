@@ -6,8 +6,8 @@ require 'rails_helper'
 RSpec.describe QuestionsController, type: :controller do
   describe 'POST #create' do
     let(:question_params) do
-      { label: 'What is 1 + 1?',
-        options: ['2', '3', '42'] }
+      { question: { label: 'What is 1 + 1?',
+        options_string: '2, 3, 42' } }
     end
 
     it 'creates a new Question' do
