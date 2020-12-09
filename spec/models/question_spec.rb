@@ -12,7 +12,7 @@ RSpec.describe Question, type: :model do
 
   describe '#options_string=' do
     context 'when there are no current Options' do
-      it 'should add the new Options' do
+      it 'adds the new Options' do
         expect {
           question.options_string = 'red, blue, green'
           question.reload
@@ -44,9 +44,13 @@ RSpec.describe Question, type: :model do
           question.options_string = 'orange'
         end
 
-        it 'the original Option should be removed' do
+        let!(:orange_option) { question.options.find_by(name: 'orange') }
+
+        it 'removes the original option' do
+          expect(orange_option.id).not_to be_nil # sanity check
           question.options_string = 'red, blue, green'
           expect(question.reload.options.map(&:name)).not_to include("orange")
+          expect(Option.find(orange_option.id)).to be_nil
         end
       end
     end
