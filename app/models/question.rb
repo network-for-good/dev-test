@@ -5,7 +5,7 @@ class Question < ApplicationRecord
 
   def options_string=(option_string)
     new_options = option_string.to_s.split(',').map(&:strip)
-    
+
     new_options.each_with_index do |option, index|
       # for each new option
       if (found_option = options.select { |o| o.name.downcase == option.downcase }.first).present?

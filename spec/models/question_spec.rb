@@ -26,7 +26,13 @@ RSpec.describe Question, type: :model do
       end
 
       context 'and it matches one of the new Options' do
-        it 'should change the position of the existing Option' do
+        let(:blue_option) { question.options.find_by(name: 'blue') }
+
+        it "updates the existing option's position" do
+          expect { question.options_string = 'red, blue, green' }.to change { blue_option.reload.position }.from(0).to(1)
+        end
+
+        it 'inserts the new options around the existing option' do
           question.options_string = 'red, blue, green'
           question.reload
           expect(question.options.order(:position).pluck(:name)).to eq(%w{red blue green})
