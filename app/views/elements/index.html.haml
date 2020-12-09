@@ -1,0 +1,15 @@
+.container
+  .row
+    .col-sm-12#badges
+      %h1 Badges
+
+      %h2 Simple badges
+      = ui.nfg :badge, :pill, body: "Network For Good", theme: :danger
+
+      = ui.nfg :badge, :pill, body: 12, theme: :primary, class: 'example-class'
+
+      = ui.nfg :badge, :pill, theme: :success do
+        = "Fundraising"
+
+      %hr
+
