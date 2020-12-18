@@ -37,7 +37,7 @@ Your goal is to add functionality and fix bugs so that the app's [RSpec test sui
 
 ## Development
 
-* Add and change Ruby code to make the test suite pass successfully by running `rspec`.
+* Add and change Ruby code to make the test suite pass successfully by running `rspec`. You should not need to make any changes to the specs.
 
 * The application views use Network for Good's design system, [NFG UI](https://github.com/network-for-good/nfg_ui). You may want to refer to NFG UI's [documentation site](https://nfg-ui-display-app.herokuapp.com/bootstrap/badges).
 
@@ -45,7 +45,7 @@ Your goal is to add functionality and fix bugs so that the app's [RSpec test sui
 
 * When complete, you will see a success message such as: `15 examples, 0 failures`.
 
-* Add and change JS code to make the test suite pass successfully by running `yarn test`.
+* Add and change JS code to make the test suite pass successfully by running `yarn test`. Update the two JS tests with 'fail('Todo')' with tests that verify the action described in the description of the test.
 
 * When complete, you will see a success message such as:  `Tests:       8 passed, 8 total`
 
