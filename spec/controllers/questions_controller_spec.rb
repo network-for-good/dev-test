@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe QuestionsController, type: :controller do
   describe 'POST #create' do
     let(:question_params) do
-      { label: 'What is 1 + 1?',
-        options: ['2', '3', '42'] }
+      { question: { label: 'What is 1 + 1?',
+        options: [' 2', '3', '42'] } }
     end
 
     it 'creates a new Question' do
@@ -25,7 +25,7 @@ RSpec.describe QuestionsController, type: :controller do
 
   context 'with invalid input' do
     it 'renders /new' do
-      post :create, params: { label: '' }
+      post :create, params: { question: { label: '' } }
       expect(response).to be_successful
       # NOTE: this assertion was removed from Rails v5.1, but is provided in this test app via the rails-controller-testing gem
       expect(response).to render_template('new')
