@@ -1,5 +1,4 @@
 class Question < ApplicationRecord
-  has_many :options
 
   validates :label, presence: true, length: { maximum: 150 }
 
