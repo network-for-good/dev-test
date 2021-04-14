@@ -1,3 +1,6 @@
+// NOTE: Please change the application code to make the below specs pass;
+// do not change the specs themselves except where specifically asked to
+
 import OptionsComponent from 'OptionsComponent';
 import $ from 'jquery';
 
@@ -36,17 +39,19 @@ describe('when options present', () => {
     expect($('ol li:first').html()).toContain('<input type="text" name="question[options][]" value="red">');
     expect($('ol li:last').html()).toContain('<input type="text" name="question[options][]" value="green">');
   });
-  
-  it('allows you to delete option', () => { 
+
+  it('allows you to delete option', () => {
     $('ol li:first i.fa-trash').click();
     expect($('ol li:first').html()).not.toContain('<input type="text" name="question[options][]" value="red">');
   });
 
-  it('allows you to add option', () => { 
+  it('allows you to add option', () => {
     $('#add_btn').click();
     expect($('ol li').length).toBe(3)
     expect($('ol li:last').html()).toContain(`<input type="text" name="question[options][]" value="">`);
   });
+
+  // NOTE: Please update these last two specs to properly test the assertions
 
   it('should not allow to delete last option', () => {
     fail('Todo')
