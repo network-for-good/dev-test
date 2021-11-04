@@ -39,7 +39,7 @@ Your goal is to add functionality and fix bugs so that the app's [RSpec test sui
 
 * Add and change Ruby code to make the test suite pass successfully by running `rspec`. You should not need to make any changes to the specs.
 
-* The application views use Network for Good's design system, [NFG UI](https://github.com/network-for-good/nfg_ui). You may want to refer to NFG UI's [documentation site](https://nfg-ui-display-app.herokuapp.com/bootstrap/badges).
+* The application views use Network for Good's design system, [NFG UI](https://github.com/network-for-good/nfg_ui). You may want to refer to NFG UI's [documentation site](https://nfg-ui-display-app.herokuapp.com/elements/buttons?stylesheet=public).
 
 * You may see warning messages related to the NFG UI gem, such as `warning: already initialized constant NfgUi::Components::Utilities::ResourceThemeable::FALLBACK_ICO`. These warnings may be safely disregarded.
 
