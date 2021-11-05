@@ -49,6 +49,12 @@ Your goal is to add functionality and fix bugs so that the app's [RSpec test sui
 
 * When complete, you will see a success message such as:  `Tests:       8 passed, 8 total`
 
+## Front-End Development
+
+* Visit the elements/html_test page locally to view the questions. Add and change the HAML code to answer the questions. You should not need to make any changes to CSS.
+
+* Please provide your answers within that file.
+
 ## Delivery Instructions
 
 Solutions should be delivered via GitHub, since Network for Good uses GitHub for source control. Part of our assessment includes evaluating your ability to use Git branches and pull requests. Once your solution is complete:
