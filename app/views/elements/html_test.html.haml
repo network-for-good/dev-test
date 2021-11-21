@@ -1,0 +1,49 @@
+.container.py-5
+  = ui.nfg :tile do
+
+    = ui.nfg :tile_section do
+      = ui.nfg :typeface, heading: "Q1: Which color from the styles below gets applied to the \"What's my color style?\" text and why?", class: 'mb-3'
+      %pre
+        %code
+          :preserve
+            %style
+              span.text { color: red; }
+              p { color: blue; }
+              div { color: green; }
+              div span { color: black; }
+              div p { color: orange; }
+      %pre
+        %code
+          :preserve
+            %div
+              %p
+                %span.text
+                  %b What's my color style?
+
+    = ui.nfg :tile_section do
+      = ui.nfg :typeface, :heading, class: 'mb-3' do
+        Q2: Create the card shown in this image using syntax from the nfg ui documentation site:
+        = link_to 'View Docs', 'https://nfg-ui-display-app.herokuapp.com/elements/buttons?stylesheet=public', target: '_blank'
+      = ui.nfg :image, src: 'card-example.png'
+
+    = ui.nfg :tile_section do
+      = ui.nfg :typeface, :heading, class: 'mb-2' do
+        Q3: Without changing the HTML order, use these columns and elements to display in the correct order on each device. On a small device, the order should be search, filters, results. On a large device, the order should be filters, search, results.
+      = ui.nfg :typeface, :body, :muted do
+        We use bootstrap as the basis of our front-end and you can find helpful hints
+        = link_to 'here.', 'https://getbootstrap.com/docs/4.5/utilities/flex/', target: '_blank'
+      .row
+        .col-12
+          -# Results
+          = ui.nfg :typeface, body: '12 results', class: 'mb-0'
+        .col
+          -# Search
+          = ui.nfg :input_group do
+            .flex-fill
+              %input.form-control
+            .input-group-append
+              = ui.nfg :button, :submit, :secondary, disable_with: ui.nfg(:icon, :loader) do
+                = ui.nfg :icon, 'search'
+        .col
+          -# Filters
+          = ui.nfg :button, body: 'Filters', icon: 'caret-down'
