@@ -25,7 +25,7 @@ Your goal is to add functionality and fix bugs so that the app's [RSpec test sui
 
 ## Setup Steps
 
-1. Download a copy of the `dev-test` from this URL: https://github.com/network-for-good/dev-test/archive/master.zip.  We don't recommend cloning the `dev-test` repository, because you will be delivering your solution as a private repository pull request (see Delivery Instructions, below).
+1. Download a copy of the `dev-test` from this URL: https://github.com/network-for-good/dev-test/archive/main.zip.  We don't recommend cloning the `dev-test` repository, because you will be delivering your solution as a private repository pull request (see Delivery Instructions, below).
 
 2. Run the `bin/setup` command to install the app's dependencies and prepare the application's [SQLite](https://sqlite.org/index.html) database.
 
