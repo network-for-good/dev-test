@@ -11,7 +11,7 @@ This project is a simple Rails app intended to help you demonstrate:
 * Problem-solving abilities
 * Ability to use the [Git version control system](https://git-scm.com/)
 
-Your goal is to add functionality and fix bugs so that the app's [RSpec test suite](spec/) and [JS test suite](spec/javascript/) pass. Please do not spend more than *four* hours on this project; we do not necessarily expect candidates to solve every test. We want to see how you approach this set of problems.
+Your goal is to add functionality and fix bugs so that the app's [RSpec test suite](spec/) and [JS test suite](spec/javascript/) pass. Please do not spend more than _four_ hours on this project; we do not necessarily expect candidates to solve every test. We want to see how you approach this set of problems.
 
 ## Prerequisites
 
@@ -69,6 +69,7 @@ Solutions should be delivered via GitHub, since Network for Good uses GitHub for
 
 * [@hoenth](http://github.com/hoenth)
 * [@subelsky](https://github.com/subelsky)
+* [@kylejmorin](https://github.com/kylejmorin)
 
 These steps mirror the code review process used by Network for Good.
 
