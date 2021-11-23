@@ -11,7 +11,7 @@ This project is a simple Rails app intended to help you demonstrate:
 * Problem-solving abilities
 * Ability to use the [Git version control system](https://git-scm.com/)
 
-Your goal is to add functionality and fix bugs so that the app's [RSpec test suite](spec/) and [JS test suite](spec/javascript/) pass. Please do not spend more than four hours on this project; we do not necessarily expect candidates to solve every test. We want to see how you approach this set of problems.
+Your goal is to add functionality and fix bugs so that the app's [RSpec test suite](spec/) and [JS test suite](spec/javascript/) pass. Please do not spend more than *four* hours on this project; we do not necessarily expect candidates to solve every test. We want to see how you approach this set of problems.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ Your goal is to add functionality and fix bugs so that the app's [RSpec test sui
 
 * If you have access to a Windows development environment, you should be able to use [RubyInstaller](https://rubyinstaller.org/) to run the app, but that has not yet been tested. If you are able to set this up, please let us know. Pull requests welcome!
 
-* You need `yarn` package to run JS tests. You can find setup instructions [here](https://classic.yarnpkg.com/en/docs/install).
+* You will need to install `yarn` in order to run JS tests. You can find setup instructions [here](https://classic.yarnpkg.com/en/docs/install).
 
 ## Setup Steps
 
@@ -31,9 +31,9 @@ Your goal is to add functionality and fix bugs so that the app's [RSpec test sui
 
 3. Run the command `yarn install` to install JS dependencies.
 
-4. Run the command `rspec` to exercise the test suite. You should see a list of test failures.
+4. Run the command `rspec` to exercise the Ruby test suite. You should see a list of test failures.
 
-5. Run the command `yarn test` to exercise the js test suite.
+5. Run the command `yarn test` to exercise the JS test suite.
 
 ## Development
 
@@ -51,7 +51,7 @@ Your goal is to add functionality and fix bugs so that the app's [RSpec test sui
 
 ## Front-End Development
 
-* Visit the elements/html_test page locally to view the questions. Add and change the HAML code to answer the questions. You should not need to make any changes to CSS.
+* Visit the `elements/html_test` page locally to view the questions. Add and change the HAML code to answer the questions. You should not need to make any changes to CSS.
 
 * Please provide your answers within that file.
 
