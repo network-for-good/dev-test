@@ -23,7 +23,7 @@ Your goal is to add functionality and fix bugs so that the app's [RSpec test sui
 
 * You will need to install `yarn` in order to run JS tests. You can find setup instructions [here](https://classic.yarnpkg.com/en/docs/install).
 
-* You will need Ruby 2.6.8 installed. You consider using a ruby version manager like [rbenv](https://github.com/rbenv/rbenv)
+* You will need Ruby 2.6.8 installed. You should consider using a ruby version manager like [rbenv](https://github.com/rbenv/rbenv)
 
 ## Setup Steps
 
