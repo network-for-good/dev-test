@@ -1,6 +1,6 @@
-# Network for Good Developer Test
+# Bonterra Developer Test
 
-[Network for Good](https://www.networkforgood.com/) an equal opportunity employer. We evaluate qualified applicants without regard to race, color, religion, sex, age, sexual orientation, gender identity, national origin, disability, marital or parental status, veteran status, and other legally protected characteristics.
+[Bonterra](https://www.networkforgood.com/) an equal opportunity employer. We evaluate qualified applicants without regard to race, color, religion, sex, age, sexual orientation, gender identity, national origin, disability, marital or parental status, veteran status, and other legally protected characteristics.
 
 ## About the Test
 
@@ -23,6 +23,8 @@ Your goal is to add functionality and fix bugs so that the app's [RSpec test sui
 
 * You will need to install `yarn` in order to run JS tests. You can find setup instructions [here](https://classic.yarnpkg.com/en/docs/install).
 
+* You will need Ruby 2.6.8 installed. You consider using a ruby version manager like [rbenv](https://github.com/rbenv/rbenv)
+
 ## Setup Steps
 
 1. Download a copy of the `dev-test` from this URL: https://github.com/network-for-good/dev-test/archive/main.zip.  We don't recommend cloning the `dev-test` repository, because you will be delivering your solution as a private repository pull request (see Delivery Instructions, below).
@@ -39,7 +41,7 @@ Your goal is to add functionality and fix bugs so that the app's [RSpec test sui
 
 * Add and change Ruby code to make the test suite pass successfully by running `rspec`. You should not need to make any changes to the specs.
 
-* The application views use Network for Good's design system, [NFG UI](https://github.com/network-for-good/nfg_ui). You may want to refer to NFG UI's [documentation site](https://nfg-ui-display-app.herokuapp.com/elements/buttons?stylesheet=public).
+* The application views use Bonterra's design system, [NFG UI](https://github.com/network-for-good/nfg_ui). You may want to refer to NFG UI's [documentation site](https://nfg-ui-display-app.herokuapp.com/elements/buttons?stylesheet=public).
 
 * You may see warning messages related to the NFG UI gem, such as `warning: already initialized constant NfgUi::Components::Utilities::ResourceThemeable::FALLBACK_ICO`. These warnings may be safely disregarded.
 
@@ -57,7 +59,7 @@ Your goal is to add functionality and fix bugs so that the app's [RSpec test sui
 
 ## Delivery Instructions
 
-Solutions should be delivered via GitHub, since Network for Good uses GitHub for source control. Part of our assessment includes evaluating your ability to use Git branches and pull requests. Once your solution is complete:
+Solutions should be delivered via GitHub, since Bonterra uses GitHub for source control. Part of our assessment includes evaluating your ability to use Git branches and pull requests. Once your solution is complete:
 
 1. Create a private GitHub repository within your personal GitHub account. You should suffix the repository name with your GitHub user name. For example, if `@subelsky` delivers an solution, the private repository would be named `dev-test-subelsky`. Refer to [these instructions](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/setting-repository-visibility) to ensure your solution is private.
 
@@ -68,11 +70,10 @@ Solutions should be delivered via GitHub, since Network for Good uses GitHub for
 4. Add the following GitHub accounts to your private repository as collaborators, so that we can see your pull request:
 
 * [@hoenth](http://github.com/hoenth)
-* [@subelsky](https://github.com/subelsky)
-* [@kylejmorin](https://github.com/kylejmorin)
+* [@jmolineEA](https://github.com/jmolineEA)
 
-These steps mirror the code review process used by Network for Good.
+These steps mirror the code review process used by Bonterra.
 
-## Opportunities at Network for Good
+## Opportunities at Bonterra
 
-Please refer to our [careers](https://www.networkforgood.com/about/careers/) page for more details.
+Please refer to our [careers](https://bonterra.wd1.myworkdayjobs.com/bonterratech) page for more details.
