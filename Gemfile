@@ -13,16 +13,15 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'webpacker', '~> 5.x'
 gem 'turbolinks'
 # App-specific gems
-gem 'haml'
-gem "haml-rails", "~> 1.0"
+gem 'haml-rails', '~> 2.0.1'
 gem 'nfg_ui', git: 'https://github.com/network-for-good/nfg_ui', branch: 'master'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'factory_bot_rails'
-  gem 'rspec-rails', '~> 3.5'
-  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
+  gem 'rspec-rails', '~> 4.0'
+  gem 'shoulda-matchers'
   gem 'spring-commands-rspec'
 end
 
